@@ -34,7 +34,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.employeeTableAdapter1 = new WindowsFormsApp1.wiNRG_dbDataSetTableAdapters.EmployeeTableAdapter();
+            this.wiNRG_dbDataSet1 = new WindowsFormsApp1.wiNRG_dbDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wiNRG_dbDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -50,10 +53,10 @@
             // 
             // emailTB
             // 
-            this.emailTB.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTB.Location = new System.Drawing.Point(358, 231);
             this.emailTB.Name = "emailTB";
-            this.emailTB.Size = new System.Drawing.Size(308, 23);
+            this.emailTB.Size = new System.Drawing.Size(308, 22);
             this.emailTB.TabIndex = 1;
             this.emailTB.Text = "Email";
             this.emailTB.TextChanged += new System.EventHandler(this.emailTB_TextChanged);
@@ -62,10 +65,11 @@
             // 
             // passwordDB
             // 
-            this.passwordDB.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordDB.Location = new System.Drawing.Point(358, 280);
             this.passwordDB.Name = "passwordDB";
-            this.passwordDB.Size = new System.Drawing.Size(308, 23);
+            this.passwordDB.PasswordChar = '*';
+            this.passwordDB.Size = new System.Drawing.Size(308, 22);
             this.passwordDB.TabIndex = 2;
             this.passwordDB.Text = "Password";
             this.passwordDB.Enter += new System.EventHandler(this.passwordDB_Enter);
@@ -76,7 +80,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::WindowsFormsApp1.Properties.Resources.fundal;
             this.button1.Location = new System.Drawing.Point(659, 339);
@@ -90,11 +94,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+
             this.linkLabel1.BackColor = System.Drawing.Color.White;
             this.linkLabel1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(408, 346);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(133, 20);
+
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot fassword?";
@@ -102,14 +108,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
+
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(451, 158);
+
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 41);
+            this.label1.Size = new System.Drawing.Size(108, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "Sign in";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // employeeTableAdapter1
+            // 
+            this.employeeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // wiNRG_dbDataSet1
+            // 
+            this.wiNRG_dbDataSet1.DataSetName = "wiNRG_dbDataSet";
+            this.wiNRG_dbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form1
             // 
@@ -129,6 +146,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wiNRG_dbDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,6 +160,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;
+        private wiNRG_dbDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
+        private wiNRG_dbDataSet wiNRG_dbDataSet1;
     }
 }
 
