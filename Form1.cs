@@ -19,11 +19,14 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.emailTB.Text = "E-mail";
+            this.passwordDB.Text = "Password";
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             
             this.employeeTableAdapter1.Fill(this.wiNRG_dbDataSet1.Employee);
             string name= emailTB.Text;
@@ -47,6 +50,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Log in failed, try again");
             }
             
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,5 +62,36 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void emailTB_Enter(object sender, EventArgs e)
+        {
+            if(emailTB.Text == "E-mail")
+            {
+                emailTB.Text = "";
+            }
+        }
+
+        private void emailTB_Leave(object sender, EventArgs e)
+        {
+            if (emailTB.Text == "")
+            {
+                emailTB.Text = "E-mail";
+            }
+        }
+        
+        private void passwordDB_Enter(object sender, EventArgs e)
+        {
+            if(passwordDB.Text == "Password")
+            {
+                passwordDB.Text = "";
+            }
+        }
+
+        private void passwordDB_Leave(object sender, EventArgs e)
+        {
+            if (passwordDB.Text == "")
+                passwordDB.Text = "Password";
+        }
+
     }
 }
