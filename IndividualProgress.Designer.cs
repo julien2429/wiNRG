@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Home
+    partial class IndividualProgress
     {
         /// <summary>
         /// Required designer variable.
@@ -38,25 +38,24 @@ namespace WindowsFormsApp1
             this.button1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.TRANS;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 2);
+            this.button1.Location = new System.Drawing.Point(-1, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 66);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 2;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Home
+            // IndividualProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Home_Page;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.View_Progress_Consumption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(942, 636);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
-            this.Name = "Home";
+            this.Name = "IndividualProgress";
             this.Text = "Form2";
             this.ResumeLayout(false);
 
