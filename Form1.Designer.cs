@@ -40,9 +40,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(270, 134);
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.fundal_login;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(144, 56);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(473, 251);
+            this.pictureBox1.Size = new System.Drawing.Size(756, 433);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -73,7 +75,7 @@
             this.button1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::WindowsFormsApp1.Properties.Resources.fundal;
-            this.button1.Location = new System.Drawing.Point(649, 332);
+            this.button1.Location = new System.Drawing.Point(659, 339);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 32);
             this.button1.TabIndex = 3;
@@ -84,9 +86,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.BackColor = System.Drawing.Color.White;
             this.linkLabel1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(419, 340);
+            this.linkLabel1.Location = new System.Drawing.Point(408, 346);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(118, 18);
             this.linkLabel1.TabIndex = 4;
@@ -96,9 +98,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(448, 163);
+            this.label1.Location = new System.Drawing.Point(451, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 41);
             this.label1.TabIndex = 5;
