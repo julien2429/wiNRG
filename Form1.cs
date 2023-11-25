@@ -24,10 +24,29 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form f = new Form2();
-            f.ShowDialog();
-            this.Close();
+            
+            this.employeeTableAdapter1.Fill(this.wiNRG_dbDataSet1.Employee);
+            string name= emailTB.Text;
+            string password = passwordDB.Text;
+
+            try
+            {
+                int id = (int)employeeTableAdapter1.getIdByUsername(name);
+                if(this.employeeTableAdapter1.ReturnPassword(id).ToString() == password)
+                {
+                    this.Hide();
+                    Form f = new Home();
+                    f.ShowDialog();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Wrong password");
+            }
+            catch
+            {
+                MessageBox.Show("Log in failed, try again");
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
