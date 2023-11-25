@@ -57,6 +57,8 @@
             this.emailTB.TabIndex = 1;
             this.emailTB.Text = "Email";
             this.emailTB.TextChanged += new System.EventHandler(this.emailTB_TextChanged);
+            this.emailTB.Enter += new System.EventHandler(this.emailTB_Enter);
+            this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // passwordDB
             // 
@@ -66,6 +68,8 @@
             this.passwordDB.Size = new System.Drawing.Size(308, 23);
             this.passwordDB.TabIndex = 2;
             this.passwordDB.Text = "Password";
+            this.passwordDB.Enter += new System.EventHandler(this.passwordDB_Enter);
+            this.passwordDB.Leave += new System.EventHandler(this.passwordDB_Leave);
             // 
             // button1
             // 
@@ -90,7 +94,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(408, 346);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(118, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(133, 20);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot fassword?";
