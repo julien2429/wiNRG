@@ -22,24 +22,12 @@ namespace WindowsFormsApp1
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailTB_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Form f = new Form2();
+            f.ShowDialog();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,12 +35,9 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void emailTB_TextChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            Form f = new Form2();
-            f.ShowDialog();
-            this.Close();
+
         }
     }
 }

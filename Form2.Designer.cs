@@ -35,12 +35,11 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(382, 178);
+            this.label2.Location = new System.Drawing.Point(343, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "FORM PROBA";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form2
             // 
