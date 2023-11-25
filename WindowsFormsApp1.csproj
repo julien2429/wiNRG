@@ -143,6 +143,11 @@
     <None Include="Resources\button.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\close-29-64.png" />
+    <Content Include="Resources\logo.ico" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\minimize-8-16.png" />
+    <Content Include="Resources\minimize-8-64.png" />
     <None Include="Resources\TRANS.png" />
     <None Include="Resources\View Progress Consumption.png" />
     <None Include="Resources\Calendar.png" />

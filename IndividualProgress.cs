@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public IndividualProgress()
         {
             InitializeComponent();
+            this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,6 +24,11 @@ namespace WindowsFormsApp1
             Form f = new Home_Menu();
             f.ShowDialog();
             this.Close();
+        }
+
+        private void IndividualProgress_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

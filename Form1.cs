@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +17,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+           
+            this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,7 +42,7 @@ namespace WindowsFormsApp1
                 if(this.employeeTableAdapter1.ReturnPassword(id).ToString() == password)
                 {
                     this.Hide();
-                    Form f = new Home();
+                    Form f = new Home_Menu();
                     f.ShowDialog();
                     this.Close();
                 }
@@ -93,5 +97,9 @@ namespace WindowsFormsApp1
                 passwordDB.Text = "Password";
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

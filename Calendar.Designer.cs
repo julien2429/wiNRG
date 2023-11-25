@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,8 +57,10 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(942, 636);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calendar";
-            this.Text = "Calendar";
+            this.Text = "wiNRG";
+            this.Load += new System.EventHandler(this.Calendar_Load);
             this.ResumeLayout(false);
 
         }

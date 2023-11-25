@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public Home()
         {
             InitializeComponent();
+            this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -33,6 +34,17 @@ namespace WindowsFormsApp1
             Form f = new Home_Menu();
             f.ShowDialog();
             this.Close();
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.UseVisualStyleBackColor = false;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(100, Color.Black);
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

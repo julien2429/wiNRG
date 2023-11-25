@@ -14,7 +14,9 @@ namespace WindowsFormsApp1
     {
         public Home_Menu()
         {
+
             InitializeComponent();
+            this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
         private void Home_Menu_Load(object sender, EventArgs e)
