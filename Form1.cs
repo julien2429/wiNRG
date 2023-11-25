@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-           
+            this.CenterToScreen();
             this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
@@ -100,6 +100,11 @@ namespace WindowsFormsApp1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+         
         }
     }
 }

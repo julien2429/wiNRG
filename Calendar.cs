@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public Calendar()
         {
             InitializeComponent();
+            this.CenterToScreen();
             this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 

@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 66);
+            this.button1.Size = new System.Drawing.Size(70, 61);
             this.button1.TabIndex = 0;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;

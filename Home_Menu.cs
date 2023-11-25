@@ -16,6 +16,19 @@ namespace WindowsFormsApp1
         {
 
             InitializeComponent();
+            this.CenterToScreen();
+            button1.UseVisualStyleBackColor = false;
+            button2.UseVisualStyleBackColor = false;
+            button3.UseVisualStyleBackColor = false;
+            button4.UseVisualStyleBackColor = false;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.FlatAppearance.BorderSize = 0;
             this.DoubleBuffered = true; // Reduce flickering during drawing
         }
 
@@ -31,6 +44,7 @@ namespace WindowsFormsApp1
             f.ShowDialog();
             this.Close();
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -47,5 +61,33 @@ namespace WindowsFormsApp1
             f.ShowDialog();
             this.Close();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.UseVisualStyleBackColor = false;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(100, Color.Black);
+        }
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.UseVisualStyleBackColor = false;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(100, Color.Black);
+        }
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            button3.UseVisualStyleBackColor = false;
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(80, Color.Black);
+        }
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            button4.UseVisualStyleBackColor = false;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(100, Color.Black);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

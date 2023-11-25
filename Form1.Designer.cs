@@ -83,7 +83,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::WindowsFormsApp1.Properties.Resources.fundal;
             this.button1.Location = new System.Drawing.Point(583, 365);
@@ -93,6 +93,7 @@
             this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // linkLabel1
             // 
