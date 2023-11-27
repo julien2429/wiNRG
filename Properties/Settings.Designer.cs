@@ -26,9 +26,8 @@ namespace WindowsFormsApp1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Carina\\Desktop\\wiNRG" +
-            "\\C-sharp-Budapest-app\\DataBase_Tables\\wiNRG_db.mdf;Integrated Security=True;Conn" +
-            "ect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Resources\\Dat" +
+            "a_base\\wiNRG_db.mdf;Integrated Security=True;Connect Timeout=30")]
         public string wiNRG_dbConnectionString {
             get {
                 return ((string)(this["wiNRG_dbConnectionString"]));

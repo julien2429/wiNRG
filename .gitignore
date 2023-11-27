@@ -90,7 +90,6 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
 *.vspscc
 *.vssscc
 .builds
@@ -209,6 +208,7 @@ PublishScripts/
 # Microsoft Azure Build Output
 csx/
 *.build.csdef
+*.log
 
 # Microsoft Azure Emulator
 ecf/
@@ -262,8 +262,8 @@ ServiceFabricBackup/
 *.rptproj.bak
 
 # SQL Server files
-*.mdf
-*.ldf
+
+
 *.ndf
 
 # Business Intelligence projects
